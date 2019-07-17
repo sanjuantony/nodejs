@@ -1,0 +1,31 @@
+{
+  "name": "user_api",
+  "version": "1.0.0",
+  "description": "Sample REST API Using Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js",
+    "eslint": "eslint ./",
+    "eslint-fix": "eslint ./ --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "webpack --mode=development",
+    "build": "webpack --mode=production",
+    "qa": "node qa-dist/qa.api.bundle.js",
+    "prod": "node prod-dist/prod.api.bundle.js"
+  },
+  "author": "Bhargav Bachina",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.0",
+    "nodemon": "^1.19.1",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6"
+  }
+}
